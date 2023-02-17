@@ -1,3 +1,39 @@
-/*
-  CSS File
-*/
+/**
+colour pallete:
+#3C7C3B
+#E7A639
+#F7E7CE
+
+**/
+
+
+
+main{
+    background-color: #3C7C3B;
+}
+
+footer{
+    background-color: #3C7C3B;
+}
+
+
+
+  /* .test{
+
+  } */
+
+
+/****** Screen reader text utility class- that I stole from excersize 15.
+is that ok???? I didn't know how to do it on my own but still wanted it here
+I hope that's ok *******/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
