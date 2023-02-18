@@ -36,11 +36,7 @@ header {
     /** background colour and fonts**/
     background-color: #3C7C3B;
 
-    /**I don't know why it's not actually changing the font weight and it's
-     making me sad but I don't have it in me to figure out how to fix it**/
     font-weight: 700;
-
-
     font-size: 40px;
     color: white;
 
@@ -86,6 +82,8 @@ nav ul li {
 
 /**TRAILER AND AVAILABLE NOW**/
 .buy {
+    background-color: #3C7C3B;
+
     font-weight: 700;
     font-size: 50px;
     color: white;
@@ -150,12 +148,16 @@ nav ul li {
     background-color: #F7E7CE;
 }
 
+.music p {
+    font-weight: 500;
+}
+
 .music .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     gap: 1rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 15rem;
     padding-left: 10rem;
     padding-right: 10rem;
@@ -164,10 +166,11 @@ nav ul li {
 
 
 .music .text-1 {
-    border: 1px solid red;
     display: flex;
     height: 273px;
     flex-direction: column;
+    margin-right: 10rem;
+    gap: 1rem;
 }
 
 
@@ -182,12 +185,240 @@ nav ul li {
 
     background-color: #3C7C3B;
     border-radius: 15px;
-    padding: 0.75rem;
-    margin-right: 355px;
+    padding: 1.25rem;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    margin-top: 2rem;
+}
+
+
+/**CHARACTERS**/
+.characters {
+    color: white;
+    background-color: #3C7C3B;
+
+}
+
+.characters .container {
+    display: flex;
+    flex-direction: row;
+
+    gap: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.characters .section-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+
+}
+
+.characters .section-1 p {
+    font-weight: 400;
+    text-align: center;
+}
+
+.characters h2 {
+    font-size: 50px;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 3rem;
+}
+
+.characters h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+/**COLLECTORS EDITION**/
+.merch {
+    background-color: #E7A639;
+    display: flex;
+}
+
+.merch p {
+    font-weight: 500;
+}
+
+.merch .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 
 
+.merch .text {
+    display: flex;
+    height: 273px;
+    flex-direction: column;
+    margin-right: 10rem;
+    gap: 1rem;
+}
+
+
+.merch .button {
+    font-size: 30px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #3C7C3B;
+    border-radius: 15px;
+    padding: 1.25rem;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    margin-top: 2rem;
+}
+
+
+/**FOLLOW THE DEVELOPMENT**/
+.form {
+    background-color: #F7E7CE;
+}
+
+.form .container {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+
+    justify-content: center;
+    /**its not centering and I dont know why**/
+    padding-left: 250px;
+    padding-right: 250px;
+
+    gap: 2rem;
+}
+
+.form h3 {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+
+.form .item-1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /**why why why wwhYYY would it align like that im at my limit**/
+}
+
+.form input[type=email] {
+    border: 5px solid black;
+    width: 70%;
+
+    margin-top: 1rem;
+
+    height: 60px;
+    background-color: #F7E7CE;
+
+    font-family: "iskra", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+
+    color: #3C7C3B;
+
+}
+
+.form button[type=submit] {
+    border: 5px solid black;
+
+    height: 60px;
+    background-color: #3C7C3B;
+
+    font-family: "iskra", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+
+
+.form a {
+    color: #3C7C3B
+}
+
+.form .item-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+}
+
+
+/**FOOTER**/
+footer .container {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 3rem;
+    margin-right: 5rem;
+
+}
+
+footer .container .section-1 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer .container .section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+
+}
+
+footer .container .section-3 {
+    text-align: center;
+    color: white;
+}
+
+footer .container .section-3 a {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+footer .container .section-3 p {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 a {
@@ -195,9 +426,8 @@ a {
     text-decoration: none;
 }
 
-
 main {
-    background-color: #3C7C3B;
+    background-color: #F7E7CE;
 }
 
 footer {
@@ -232,4 +462,3 @@ I hope that's ok *******/
     white-space: nowrap;
     border-width: 0;
 }
-
