@@ -4,12 +4,116 @@ colour pallete:
 #E7A639
 #F7E7CE
 
+fonts:
+    REGULAR
+    font-family: "iskra", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    MEDIUM
+    font-family: "iskra", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    BOLD
+    font-family: "iskra", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    ULTRA BOLD
+    font-family: "iskra", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 **/
 
+*{
+    font-family: "iskra", sans-serif;
+    font-style: normal;
+}
 
+header{
+    /** background colour and fonts**/
+    background-color: #3C7C3B;
+
+    /**I don't know why it's not actually changing the font weight and it's
+     making me sad but I don't have it in me to figure out how to fix it**/
+    font-weight: 700;
+   
+
+    font-size: 40px;
+    color: white;
+ 
+    height: 110px; 
+}
+
+nav ul{
+    /* border: 1px solid red; */
+    height: 110px;
+    display:grid;
+    grid-template-columns: 700px 1fr 1.45fr repeat(3, 1fr);
+    padding-right: 2rem;
+    grid-row-start: 2;
+
+    align-content: center;
+}
+
+nav ul li{
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+
+/**thank you internet for code on how to put one image on top of another**/
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .img-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .img-2{
+    position: absolute;
+    top: 80px;
+    right: 110px;
+  }
+
+.buy{
+font-weight: 700;
+font-size: 50px;
+color:white;
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 7rem;
+padding-bottom: 7rem;
+gap: 3rem;
+}
+
+.buy ul{
+    display:flex;
+    flex-direction: row;
+    gap:5rem;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+
+*{
+    font-family: "iskra", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 main{
-    background-color: #3C7C3B;
+    background-color: #3C7C3B; 
 }
 
 footer{
@@ -37,3 +141,4 @@ I hope that's ok *******/
     white-space: nowrap;
     border-width: 0;
   }
+
