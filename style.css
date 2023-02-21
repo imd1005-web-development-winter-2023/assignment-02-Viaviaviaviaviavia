@@ -103,6 +103,10 @@ nav ul li {
     gap: 5rem;
 }
 
+iframe {
+    border: none;
+}
+
 /**ABOUT**/
 .about {
     background-color: #E7A639;
