@@ -243,6 +243,7 @@ iframe {
 .characters h3 {
     font-size: 40px;
     font-weight: 900;
+    text-align: center;
 }
 
 
@@ -262,7 +263,7 @@ iframe {
 
     gap: 1rem;
     padding-top: 10rem;
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
     padding-left: 10rem;
     padding-right: 10rem;
 }
