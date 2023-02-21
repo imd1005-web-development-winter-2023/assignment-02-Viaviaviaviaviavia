@@ -1,3 +1,468 @@
-/*
-  CSS File
-*/
+/**
+colour pallete:
+#3C7C3B
+#E7A639
+#F7E7CE
+
+fonts:
+    REGULAR
+    font-family: "iskra", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    MEDIUM
+    font-family: "iskra", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    BOLD
+    font-family: "iskra", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    ULTRA BOLD
+    font-family: "iskra", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+**/
+
+* {
+    font-family: "iskra", sans-serif;
+    font-style: normal;
+}
+
+/**HEADER**/
+header {
+    /** background colour and fonts**/
+    background-color: #3C7C3B;
+
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+
+    height: 110px;
+}
+
+nav ul {
+    /* border: 1px solid red; */
+    height: 110px;
+    display: grid;
+    grid-template-columns: 700px 1fr 1.45fr repeat(3, 1fr);
+    padding-right: 2rem;
+    grid-row-start: 2;
+
+    align-content: center;
+}
+
+nav ul li {
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+
+/**HERO**/
+/**thank you internet for code on how to put one image on top of another**/
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.img-2 {
+    position: absolute;
+    top: 80px;
+    right: 110px;
+}
+
+/**TRAILER AND AVAILABLE NOW**/
+.buy {
+    background-color: #3C7C3B;
+
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    gap: 3rem;
+}
+
+.buy ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+iframe {
+    border: none;
+}
+
+/**ABOUT**/
+.about {
+    background-color: #E7A639;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.about .section-1,
+.about .section-2,
+.about .section-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10rem;
+}
+
+
+
+.about .text-1,
+.about .text-2,
+.about .text-3 {
+
+    display: flex;
+    height: 249px;
+    flex-direction: column;
+}
+
+
+/**why did I lay out everything like that im going to cry**/
+
+/**SOUNDTRACK**/
+
+.music {
+    background-color: #F7E7CE;
+}
+
+.music p {
+    font-weight: 500;
+}
+
+.music .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+
+
+.music .text-1 {
+    display: flex;
+    height: 273px;
+    flex-direction: column;
+    margin-right: 10rem;
+    gap: 1rem;
+}
+
+
+.music .button {
+    font-size: 30px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #3C7C3B;
+    border-radius: 15px;
+    padding: 1.25rem;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    margin-top: 2rem;
+}
+
+
+/**CHARACTERS**/
+.characters {
+    color: white;
+    background-color: #3C7C3B;
+
+}
+
+.characters .container {
+    display: flex;
+    flex-direction: row;
+
+    gap: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.characters .section-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+
+}
+
+.characters .section-1 p {
+    font-weight: 400;
+    text-align: center;
+}
+
+.characters h2 {
+    font-size: 50px;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 3rem;
+}
+
+.characters h3 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+/**COLLECTORS EDITION**/
+.merch {
+    background-color: #E7A639;
+    display: flex;
+}
+
+.merch p {
+    font-weight: 500;
+}
+
+.merch .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+
+
+.merch .text {
+    display: flex;
+    height: 273px;
+    flex-direction: column;
+    margin-right: 10rem;
+    gap: 1rem;
+}
+
+
+.merch .button {
+    font-size: 30px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #3C7C3B;
+    border-radius: 15px;
+    padding: 1.25rem;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    margin-top: 2rem;
+}
+
+
+/**FOLLOW THE DEVELOPMENT**/
+.form {
+    background-color: #F7E7CE;
+}
+
+.form .container {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+
+    justify-content: center;
+    /**its not centering and I dont know why**/
+    padding-left: 250px;
+    padding-right: 250px;
+
+    gap: 2rem;
+}
+
+.form h3 {
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+
+.form .item-1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /**why why why wwhYYY would it align like that im at my limit**/
+}
+
+.form input[type=email] {
+    border: 5px solid black;
+    width: 70%;
+
+    margin-top: 1rem;
+
+    height: 60px;
+    background-color: #F7E7CE;
+
+    font-family: "iskra", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+
+    color: #3C7C3B;
+
+}
+
+.form button[type=submit] {
+    border: 5px solid black;
+
+    height: 60px;
+    background-color: #3C7C3B;
+
+    font-family: "iskra", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+
+
+.form a {
+    color: #3C7C3B
+}
+
+.form .item-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+}
+
+
+/**FOOTER**/
+footer .container {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 3rem;
+    margin-right: 5rem;
+
+}
+
+footer .container .section-1 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer .container .section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+
+}
+
+footer .container .section-3 {
+    text-align: center;
+    color: white;
+}
+
+footer .container .section-3 a {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+footer .container .section-3 p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: #F7E7CE;
+}
+
+footer {
+    background-color: #3C7C3B;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 20px
+}
+
+/* .test{
+
+  } */
+
+
+/****** Screen reader text utility class- that I stole from excersize 15.
+is that ok???? I didn't know how to do it on my own but still wanted it here
+I hope that's ok *******/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
